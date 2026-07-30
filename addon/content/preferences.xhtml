@@ -1,0 +1,30 @@
+<linkset>
+  <html:link rel="localization" href="__addonRef__-preferences.ftl" />
+</linkset>
+<groupbox
+  onload="Zotero.__addonInstance__.hooks.onPrefsEvent('load', { window })"
+>
+  <label><html:h2 data-l10n-id="pref-title"></html:h2></label>
+  <hbox align="center">
+    <html:label
+      for="zotero-prefpane-__addonRef__-groqApiKey"
+      data-l10n-id="pref-groq-key"
+    ></html:label>
+    <html:input
+      type="password"
+      id="zotero-prefpane-__addonRef__-groqApiKey"
+      preference="groqApiKey"
+    ></html:input>
+    <button
+      id="zotero-prefpane-__addonRef__-test-key"
+      data-l10n-id="pref-test-key"
+    />
+  </hbox>
+  <label id="zotero-prefpane-__addonRef__-test-status"></label>
+</groupbox>
+<vbox>
+  <html:label
+    data-l10n-id="pref-help"
+    data-l10n-args='{"time": "__buildTime__","name": "__addonName__","version":"__buildVersion__"}'
+  ></html:label>
+</vbox>
