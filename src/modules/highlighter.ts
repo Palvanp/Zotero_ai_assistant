@@ -47,7 +47,9 @@ function getPdfApp(reader: any): any {
   const win = view?._iframeWindow;
   // PDFViewerApplication is a page-script global on the pdf.js iframe window;
   // Xray wrappers hide such expandos from chrome, so prefer wrappedJSObject.
-  return win?.wrappedJSObject?.PDFViewerApplication || win?.PDFViewerApplication;
+  return (
+    win?.wrappedJSObject?.PDFViewerApplication || win?.PDFViewerApplication
+  );
 }
 
 /** Read positioned text for the reader's current page. */

@@ -35,9 +35,7 @@ function bindPrefEvents() {
         });
         statusLabel?.setAttribute(
           "value",
-          res.ok
-            ? "Connection OK."
-            : `Failed: ${res.status} ${res.statusText}`,
+          res.ok ? "Connection OK." : `Failed: ${res.status} ${res.statusText}`,
         );
       } catch (e) {
         statusLabel?.setAttribute("value", `Failed: ${e}`);

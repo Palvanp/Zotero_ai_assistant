@@ -12,13 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/local/zotero-ai-reader.git"
+    "url": "git+https://github.com/Palvanp/Zotero_ai_assistant.git"
   },
-  "author": "",
+  "author": "Palvanp",
   "bugs": {
-    "url": "https://github.com/local/zotero-ai-reader/issues"
+    "url": "https://github.com/Palvanp/Zotero_ai_assistant/issues"
   },
-  "homepage": "https://github.com/local/zotero-ai-reader#readme",
+  "homepage": "https://github.com/Palvanp/Zotero_ai_assistant#readme",
   "license": "AGPL-3.0-or-later",
   "scripts": {
     "start": "zotero-plugin serve",
